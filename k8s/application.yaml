@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-webcolor
+  name: app-webcolor1
   namespace: argocd
 spec:
   project: default
@@ -11,7 +11,7 @@ spec:
     path: k8s # monitorando de 3 em 3 minutos
   destination:
     server: https://kubernetes.default.svc
-    namespace: webcolor1
+    namespace: webcolor
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
