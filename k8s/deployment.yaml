@@ -4,7 +4,7 @@ metadata:
   name: webcolor
   namespace: webcolor
 spec:
-  replicas: 10
+  replicas: 1
   selector:
     matchLabels:
       app: webcolor
